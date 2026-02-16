@@ -1,0 +1,179 @@
+ * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+    }
+
+    h1 {
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      color: white;
+      padding: 40px 30px;
+      text-align: center;
+      font-size: 2.5em;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      margin: 0;
+    }
+
+    h2 {
+      color: #1e3c72;
+      margin-bottom: 20px;
+      font-size: 1.5em;
+      padding-left: 15px;
+      border-left: 4px solid #2a5298;
+    }
+
+    .content-wrapper {
+      padding: 30px;
+    }
+
+    .section {
+      background: #f8f9fa;
+      border-radius: 15px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    input, textarea {
+      display: block;
+      margin: 5px 0 15px 0;
+      padding: 12px 15px;
+      width: 100%;
+      max-width: 500px;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      font-size: 1em;
+      font-family: inherit;
+      transition: all 0.3s ease;
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #2a5298;
+      box-shadow: 0 0 0 3px rgba(42, 82, 152, 0.1);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      margin: 5px 5px 5px 0;
+      padding: 12px 30px;
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(42, 82, 152, 0.3);
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(42, 82, 152, 0.4);
+    }
+
+    button:active {
+      transform: translateY(0);
+    }
+
+    .vaga {
+      background: white;
+      border: 2px solid #e0e0e0;
+      border-left: 5px solid #2a5298;
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    }
+
+    .vaga:hover {
+      border-color: #2a5298;
+      box-shadow: 0 5px 20px rgba(42, 82, 152, 0.2);
+      transform: translateY(-2px);
+    }
+
+    .vaga strong {
+      color: #1e3c72;
+      font-weight: 600;
+      display: inline-block;
+      min-width: 140px;
+    }
+
+    .vaga ul {
+      margin-top: 10px;
+      padding-left: 20px;
+    }
+
+    .vaga li {
+      padding: 8px 12px;
+      margin: 5px 0;
+      background: #f8f9fa;
+      border-left: 3px solid #2a5298;
+      border-radius: 5px;
+      list-style: none;
+      transition: all 0.2s ease;
+    }
+
+    .vaga li:hover {
+      background: #e9ecef;
+      transform: translateX(5px);
+    }
+
+    .vaga li::before {
+      content: "👤";
+      margin-right: 8px;
+    }
+
+    #listaVagas:empty::before {
+      content: "📋 Nenhuma vaga cadastrada ainda. Crie sua primeira vaga acima!";
+      display: block;
+      text-align: center;
+      padding: 40px;
+      color: #999;
+      font-style: italic;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        padding: 10px;
+      }
+
+      h1 {
+        font-size: 1.8em;
+        padding: 30px 20px;
+      }
+
+      .content-wrapper {
+        padding: 20px;
+      }
+
+      .section {
+        padding: 20px;
+      }
+
+      input, textarea {
+        max-width: 100%;
+      }
+    }

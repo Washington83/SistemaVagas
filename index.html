@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Vagas</title>
+  <link rel="stylesheet" href="syle.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+ <div class="container">
+    <h1>💼 Sistema de Vagas</h1>
+    
+    <div class="content-wrapper">
+      <div class="section">
+        <h2>Criar Nova Vaga</h2>
+        <input type="text" id="nomeVaga" placeholder="Nome da vaga">
+        <textarea id="descricaoVaga" placeholder="Descrição da vaga"></textarea>
+        <input type="date" id="dataVaga">
+        <button onclick="criarVaga()">Criar Vaga</button>
+      </div>
+
+      <div class="section">
+        <h2>Inscrever Candidato</h2>
+        <input type="text" id="nomeCandidato" placeholder="Nome do candidato">
+        <input type="number" id="indiceVaga" placeholder="Índice da vaga">
+        <button onclick="inscreverCandidato()">Inscrever</button>
+      </div>
+
+      <div class="section">
+        <h2>Excluir Vaga</h2>
+        <input type="number" id="indiceExcluir" placeholder="Índice da vaga">
+        <button onclick="excluirVaga()">Excluir</button>
+      </div>
+
+      <div class="section">
+        <h2>Lista de Vagas</h2>
+        <button onclick="listarVagas()">Atualizar Lista</button>
+        <div id="listaVagas"></div>
+      </div>
+    </div>
+  </div>
+
+ </body>
+</html>
