@@ -17,6 +17,3 @@
 <li> ✔ Objetos</li>
 
 </ul>
-
-
-
